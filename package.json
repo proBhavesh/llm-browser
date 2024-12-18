@@ -1,0 +1,38 @@
+{
+    "name": "llm-browser",
+    "version": "1.0.0",
+    "description": "An offline LLM-powered browser for knowledge management",
+    "main": "src/main/main.js",
+    "type": "module",
+    "scripts": {
+        "start": "electron .",
+        "test": "jest",
+        "build": "webpack --config webpack.config.js",
+        "watch": "webpack --watch",
+        "dev": "concurrently \"npm run watch\" \"npm start\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cheerio": "^1.0.0",
+        "electron": "^33.2.1",
+        "lancedb": "^0.0.1",
+        "node-html-parser": "^6.1.13",
+        "node-llama-cpp": "^3.3.1",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "babel-loader": "^9.2.1",
+        "concurrently": "^9.1.0",
+        "css-loader": "^7.1.2",
+        "electron-builder": "^25.1.8",
+        "jest": "^29.7.0",
+        "path-browserify": "^1.0.1",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^5.1.4"
+    }
+}
